@@ -1,4 +1,4 @@
-# Ulam Spiral
+# Ulam Spiral - Interactive Application
 
 ## Overview of the Application
 
