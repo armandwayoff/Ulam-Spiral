@@ -1,1 +1,1 @@
-# Spirale-d-Ulam
+# Ulam Spiral
