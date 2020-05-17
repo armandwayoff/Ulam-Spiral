@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-  <title>Spirale d'Ulam</title>
+  <title>Ulam Spiral - Interactive Application</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -9,33 +10,44 @@
 </head>
 
 <body>
-  <div id="app">
-    <div class="parametres">
-      <h2>Paramètres</h2>
+  <h1 class="page-title">Ulam Spiral - Interactive Application</h1>
 
-      <div class="input">
-        <label for="">Dimension de la spirale (impaire) :</label>
+  <div id="app">
+    <div id="parameters">
+      <h2>Parameters</h2>
+
+      <div class="inputs">
+        <label for="">Dimension of the spiral</label>
         <input type="number" min="3" max="31" value="7" step="2" id="dimension">
       </div>
 
-      <div class="input">
-        <label for="">Nombre central :</label>
-        <input type="number" min="1" max="600" value="1" step="1" id="nbrCtr">
+      <div class="inputs">
+        <label for="">Central number</label>
+        <input type="number" min="1" max="100" value="1" step="1" id="nbrCtr">
       </div>
 
-      <label><u>Affichage des nombres :</u></label>
+      <label><u>Numbers display :</u></label>
 
-      <div class="input">
-        <label for="affNbr">Valeurs entières</label>
-        <input type="radio" name="affNbr" id="valEnt" checked>
+      <div class="inputs">
+        <label for="affNbr">Whole numbers</label>
+        <input type="radio" name="affNbr" id="valEnt" checked="">
       </div>
 
-      <div class="input">
+      <div class="inputs">
         <label for="affNbr" class="txtPoints">Points</label>
-        <input type="radio" name="affNbr" id="points"><br />
+        <input type="radio" name="affNbr" id="points"><br>
       </div>
+
     </div>
-    <script src="app-ulam.js"></script>
+
+    <div id="canvas"></div>
   </div>
+
+  <footer>
+    <p>Made by <a href="https://github.com/armandwayoff" title="Visit my GitHub!" target="_blank">Armand Wayoff</a></p>
+  </footer>
+
+  <script src="ulam-spiral.js"></script>
 </body>
+
 </html>
