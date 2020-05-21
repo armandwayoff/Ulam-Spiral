@@ -1,4 +1,4 @@
-# 🌀 Ulam's Spiral - Interactive Application
+# Ulam's Spiral - Interactive Application
 
 [Visit the Application](https://editor.p5js.org/armandwayoff/present/q7rzZCcgv)
 
