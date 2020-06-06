@@ -1,7 +1,8 @@
 import sys
+import sympy
 from math import floor, sqrt
 
-spiralSize = 9  # odd number
+spiralSize = 23  # odd number
 
 
 def createEmptyMatrix(size):
@@ -23,7 +24,7 @@ else:
     sys.exit("Error: the size of the spiral should be odd")
 
 x = y = floor(spiralSize / 2)  # middle of the spiral
-matrix[y][x] = 1
+matrix[y][x] = ''
 
 for n in range(spiralSize ** 2 - 1):
     if direction(n) == 1:
@@ -34,7 +35,10 @@ for n in range(spiralSize ** 2 - 1):
         x -= 1  # move to the left
     else:
         y += 1  # move down
-    matrix[y][x] = n + 2
+    if sympy.isprime(n + 2):
+        matrix[y][x] = n + 2
+    else:
+        matrix[y][x] = ''
 
 s = [[str(e) for e in row] for row in matrix]
 lens = [max(map(len, col)) for col in zip(*s)]
