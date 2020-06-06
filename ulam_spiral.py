@@ -1,6 +1,7 @@
+import sys
 from math import floor, sqrt
 
-spiralSize = 9  # odd number
+spiralSize = 4  # odd number
 
 
 def createEmptyMatrix(size):
@@ -16,7 +17,10 @@ def direction(x):  # for more information see https://oeis.org/A063826
     return floor((sqrt(4 * x + 1) + 3) % 4 + 1)
 
 
-matrix = createEmptyMatrix(spiralSize)
+if spiralSize % 2 == 1:
+    matrix = createEmptyMatrix(spiralSize)
+else:
+    sys.exit("Error: the size of the spiral should be odd")
 
 x = y = floor(spiralSize / 2)  # middle of the spiral
 matrix[y][x] = 1
