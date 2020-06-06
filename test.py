@@ -1,38 +1,38 @@
-def createEmptyMatrix(size):
+import math
+size = 5  # odd number
+x = y = math.floor(size / 2)
+
+
+def createEmptyMatrix(s):
     m = []
-    for i in range(size):
+    for i in range(s):
         m.append([])
-        for j in range(size):
+        for j in range(s):
             m[i].append([])
     return m
 
 
-def rotateMatrix(matrix):
-    for i in range(len(matrix)):
-        for j in range(i, len(matrix)):
-            matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
-    for i in range(len(matrix)):
-        for j in range(int(len(matrix) / 2)):
-            matrix[i][j], matrix[i][len(matrix) - 1 - j] = matrix[i][len(matrix) - 1 - j], matrix[i][j]
-    return matrix
+def a(n):
+    return math.floor((math.sqrt(4 * n + 1) + 3) % 4 + 1)
 
 
-def fillMatrix(matrix):
-    n, size = 1, len(matrix)
-    for i in range(size):
-        matrix[0][i].append(n)
-        n += 1
-    rotateMatrix(matrix)
-    for rotation in range(2 * size - 1):
-        for i in range(1, size):
-            matrix[0][i].append(n)
-            n += 1
-        for i in range(1, size - rotation + 1):
-            matrix[0][i].append(n)
-            n += 1
-        rotateMatrix(matrix)
-    return matrix
+matrix = createEmptyMatrix(size)
+for i in range(size):
+    print(matrix[i])
+moves = []
 
+for n in range(size ** 2):
+    if a(n) == 1:
+        x += 1
+    elif a(n) == 2:
+        y -= 1
+    elif a(n) == 3:
+        x -= 1
+    else:
+        y += 1
+    matrix[y][x].append(n + 1)
+    moves.append(a(n))
 
-Matrix = createEmptyMatrix(3)
-print(fillMatrix(Matrix))
+print(moves)
+for i in range(size):
+    print(matrix[i])
