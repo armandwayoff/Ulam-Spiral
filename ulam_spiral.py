@@ -1,7 +1,7 @@
 import sys
 from math import floor, sqrt
 
-spiralSize = 4  # odd number
+spiralSize = 9  # odd number
 
 
 def createEmptyMatrix(size):
@@ -36,5 +36,8 @@ for n in range(spiralSize ** 2 - 1):
         y += 1  # move down
     matrix[y][x] = n + 2
 
-for i in range(spiralSize):
-    print(matrix[i])
+s = [[str(e) for e in row] for row in matrix]
+lens = [max(map(len, col)) for col in zip(*s)]
+fmt = '\t'.join('{{:{}}}'.format(x) for x in lens)
+table = [fmt.format(*row) for row in s]
+print('\n'.join(table))
