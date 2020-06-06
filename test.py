@@ -1,38 +1,36 @@
-import math
-size = 5  # odd number
-x = y = math.floor(size / 2)
+from math import floor, sqrt
+
+spiralSize = 9  # odd number
 
 
-def createEmptyMatrix(s):
+def createEmptyMatrix(size):
     m = []
-    for i in range(s):
+    for i in range(size):
         m.append([])
-        for j in range(s):
+        for j in range(size):
             m[i].append([])
     return m
 
 
-def a(n):
-    return math.floor((math.sqrt(4 * n + 1) + 3) % 4 + 1)
+def direction(x):  # for more information see https://oeis.org/A063826
+    return floor((sqrt(4 * x + 1) + 3) % 4 + 1)
 
 
-matrix = createEmptyMatrix(size)
-for i in range(size):
-    print(matrix[i])
-moves = []
+matrix = createEmptyMatrix(spiralSize)
 
-for n in range(size ** 2):
-    if a(n) == 1:
-        x += 1
-    elif a(n) == 2:
-        y -= 1
-    elif a(n) == 3:
-        x -= 1
+x = y = floor(spiralSize / 2)  # middle of the spiral
+matrix[y][x] = 1
+
+for n in range(spiralSize ** 2 - 1):
+    if direction(n) == 1:
+        x += 1  # move to the right
+    elif direction(n) == 2:
+        y -= 1  # move up
+    elif direction(n) == 3:
+        x -= 1  # move to the left
     else:
-        y += 1
-    matrix[y][x].append(n + 1)
-    moves.append(a(n))
+        y += 1  # move down
+    matrix[y][x] = n + 2
 
-print(moves)
-for i in range(size):
+for i in range(spiralSize):
     print(matrix[i])
