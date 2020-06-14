@@ -2,7 +2,7 @@ import sys
 import sympy
 from math import floor, sqrt
 
-spiralSize = 17  # odd number
+spiralSize = 15  # odd number
 centralNumber = 1  # strictly positive
 
 
@@ -28,7 +28,7 @@ x = y = floor(spiralSize / 2)  # middle of the spiral
 
 for n in range(centralNumber, spiralSize ** 2 + centralNumber):
     if sympy.isprime(n):
-        matrix[y][x] = '⭕'
+        matrix[y][x] = n
     else:
         matrix[y][x] = ''
     if move(n - centralNumber) == 1:
