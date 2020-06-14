@@ -2,7 +2,7 @@
 
 What's the [Ulam spiral](https://en.wikipedia.org/wiki/Ulam_spiral) ?
 
-## JavaScript Version
+## JS Application
 
 [Visit the Application](https://editor.p5js.org/armandwayoff/present/q7rzZCcgv)
 
