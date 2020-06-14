@@ -1,12 +1,16 @@
-# Ulam's Spiral
+# Ulam Spiral
 
 What's the [Ulam spiral](https://en.wikipedia.org/wiki/Ulam_spiral) ?
 
-## JS Application
+In this repository, I offer two versions of the Ulam spiral. 
+The first is a web application on which you can create yout own Ulam spiral according to certain parameters.
+The second is a simplified version written in Python.
+
+##  Web Application
 
 [Visit the Application](https://editor.p5js.org/armandwayoff/present/q7rzZCcgv)
 
-## Overview of the Application
+### Overview of the Application
 
 ![overview-application](illustration_image/overview-application.png)
 
