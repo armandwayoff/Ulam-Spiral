@@ -3,7 +3,7 @@
 What's the [Ulam spiral](https://en.wikipedia.org/wiki/Ulam_spiral) ?
 
 In this repository, I offer two versions of the Ulam spiral. 
-The first is an interactive application written in JavaScript on which you can create yout own Ulam spiral according to certain parameters.
+The first is an interactive application written in JavaScript on which you can create your own Ulam spiral according to certain parameters.
 The second is a version written in Python.
 
 ##  Interactive Application
