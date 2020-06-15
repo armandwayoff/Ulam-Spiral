@@ -3,10 +3,10 @@
 What's the [Ulam spiral](https://en.wikipedia.org/wiki/Ulam_spiral) ?
 
 In this repository, I offer two versions of the Ulam spiral. 
-The first is a web application on which you can create yout own Ulam spiral according to certain parameters.
-The second is a simplified version written in Python.
+The first is an interactive application written in JavaScript on which you can create yout own Ulam spiral according to certain parameters.
+The second is a version written in Python.
 
-##  Web Application
+##  Interactive Application
 
 [Visit the Application](https://editor.p5js.org/armandwayoff/present/q7rzZCcgv)
 
@@ -16,7 +16,7 @@ The second is a simplified version written in Python.
 
 ## Python Version
 
-Here is an example of a size ```15``` Ulam spiral starting at ```1```:
+Here is an example with a size ```15``` Ulam spiral starting at ```1```:
 
 ```
 197	   	   	  	193	  	191	   	  	   	  	   	   	   	   
