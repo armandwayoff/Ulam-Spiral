@@ -16,6 +16,16 @@ The second is a version written in Python.
 
 ## Python Version
 
+### How to use this Code
+
+To run this code, you will need the [SymPy](https://www.sympy.org/en/index.html) library. I use the [sympy.isprime()](https://www.geeksforgeeks.org/python-sympy-isprime-method/) method to check the primality of numbers.  
+
+#### Installing SymPy
+
+You will find all the information necessary for its installation on the following page : <https://docs.sympy.org/latest/install.html>
+
+### Example
+
 Here is an example with a size ```15``` Ulam spiral starting at ```1```:
 
 ```
