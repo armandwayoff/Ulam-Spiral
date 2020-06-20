@@ -6,6 +6,8 @@ In this repository, I offer two versions of the Ulam spiral.
 The first is an interactive application written in JavaScript on which you can create your own Ulam spiral according to certain parameters.
 The second is a version written in Python.
 
+My codes are based on the [A063826 sequence](https://oeis.org/A063826). This sequence describes the movements in the Ulam Spiral.
+
 ## Table of Contents
 
 * [Interactive Application](#interactive-application)
