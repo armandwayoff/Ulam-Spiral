@@ -16,6 +16,8 @@ The second is a version written in Python.
 
 ##  Interactive Application
 
+To program the interactive application, I use the [p5.js library](https://p5js.org/).
+
 [Visit the Application](https://editor.p5js.org/armandwayoff/present/q7rzZCcgv)
 
 ### Overview of the Application
