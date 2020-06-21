@@ -31,7 +31,6 @@ function draw() {
       }
 
       let move = floor((sqrt(4 * (n - centralNumber) + 1) + 3) % 4 + 1); // for more information see https://oeis.org/A063826
-
       if (move == 1) {
         x++; // move to the right
       } else if (move == 2) {
