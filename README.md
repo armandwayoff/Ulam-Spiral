@@ -6,7 +6,7 @@ In this repository, I offer two versions of the Ulam spiral.
 The first is an interactive application written in JavaScript on which you can create your own Ulam spiral according to certain parameters.
 The second is a version written in Python.
 
-My codes are based on the [A063826 sequence](https://oeis.org/A063826). This sequence describes the movements in the Ulam Spiral.
+My codes are based on the [A063826 sequence](https://oeis.org/A063826).
 
 ## Table of Contents
 
@@ -30,12 +30,13 @@ The interactive application is programmed with the [p5.js library](https://p5js.
 
 ### How to use this Code
 
-To run this code, you will need the [SymPy](https://www.sympy.org/en/index.html) library. I use the [sympy.isprime()](https://www.geeksforgeeks.org/python-sympy-isprime-method/) method to check the primality of numbers.  
-You will find all the information necessary for its installation on the following page : <https://docs.sympy.org/latest/install.html>
+To run this code, you will need the [SymPy](https://www.sympy.org/en/index.html) library. You will find all the information necessary for its installation on the following page : <https://docs.sympy.org/latest/install.html>.
+
+ I use the [sympy.isprime()](https://www.geeksforgeeks.org/python-sympy-isprime-method/) method to check the primality of numbers.
 
 ### Output Example
 
-Here is an example with a size ```15``` Ulam spiral starting at ```1```:
+Here is an output example with a size ```15``` Ulam spiral starting at ```1```:
 
 ```
 197	   	   	  	193	  	191	   	  	   	  	   	   	   	   
