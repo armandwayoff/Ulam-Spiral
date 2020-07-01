@@ -1,6 +1,7 @@
 [![made-with-p5js](https://img.shields.io/badge/Made_with-p5.js-ED1F5E.svg)](https://p5js.org)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
-![readme_title](readme_title.png)
+[![readme_title](readme_title.png)](https://github.com/armandwayoff/Ulam-Spiral)
 
 What's the [Ulam spiral](https://en.wikipedia.org/wiki/Ulam_spiral) ?
 
