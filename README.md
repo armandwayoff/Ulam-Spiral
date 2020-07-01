@@ -1,4 +1,4 @@
-# Ulam Spiral
+![readme_title](readme_title.png)
 
 What's the [Ulam spiral](https://en.wikipedia.org/wiki/Ulam_spiral) ?
 
@@ -19,6 +19,17 @@ My codes are based on the [A063826 sequence](https://oeis.org/A063826).
 ##  Interactive Application
 
 The interactive application is programmed with the [p5.js library](https://p5js.org/). This library is ideal because it has a full set of drawing functionality.
+
+To use the library, simply add it to your ```HTML``` code:
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+  </head>
+</html>
+```
 
 [Visit the Application](https://editor.p5js.org/armandwayoff/present/nq-eqxibK)
 
