@@ -1,15 +1,15 @@
 from sympy import isprime
 from math import floor, sqrt
 
-spiralSize = 15  # odd number
-centralNumber = 1
+spiral_size = 15  # odd number
+central_number = 1
 
-matrix = [[[] for col in range(spiralSize)] for row in range(spiralSize)]  # create an empty matrix
-x = y = floor(spiralSize / 2)
+matrix = [[[] for col in range(spiral_size)] for row in range(spiral_size)]  # create an empty matrix
+x = y = floor(spiral_size / 2)
 
-for n in range(centralNumber, spiralSize ** 2 + centralNumber):
+for n in range(central_number, spiral_size ** 2 + central_number):
     matrix[y][x] = n if isprime(n) else ''
-    move = floor((sqrt(4 * (n - centralNumber) + 1) + 3) % 4 + 1)  # for more information see https://oeis.org/A063826
+    move = floor((sqrt(4 * (n - central_number) + 1) + 3) % 4 + 1)  # for more information see https://oeis.org/A063826
     if move == 1:
         x += 1  # move to the right
     elif move == 2:
@@ -19,7 +19,7 @@ for n in range(centralNumber, spiralSize ** 2 + centralNumber):
     else:
         y += 1  # move down
 
-for i in range(spiralSize):
-    for j in range(spiralSize):
+for i in range(spiral_size):
+    for j in range(spiral_size):
         print(matrix[i][j], end="\t")
     print()
