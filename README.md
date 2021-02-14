@@ -16,7 +16,6 @@ My codes are based on the [A063826 sequence](https://oeis.org/A063826).
 * [Interactive Application](#interactive-application)
   * [Overview of the Application](#overview-of-the-application)
 * [Python Version](#python-version)
-  * [How to use this Code](#how-to-use-this-code)
   * [Output Example](#output-example)
 
 ##  Interactive Application
@@ -41,12 +40,6 @@ To use the library, simply add it to your ```HTML``` code:
 ![overview-application](illustration_image/overview-application.png)
 
 ## Python Version
-
-### How to use this Code
-
-To run this code, you will need the [SymPy](https://www.sympy.org/en/index.html) library. You will find all the information necessary for its installation on the following page : <https://docs.sympy.org/latest/install.html>.
-
- I use the [sympy.isprime()](https://www.geeksforgeeks.org/python-sympy-isprime-method/) method to check the primality of numbers.
 
 ### Output Example
 
